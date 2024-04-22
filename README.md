@@ -48,31 +48,7 @@ http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/hgsv_sv_discovery/wor
 
 ## Usage
 
-### Train Model
 
-#### 1. Produce data for training
-```bash
-python breaknet.py data_mode bamfile_path output_data_folder vcf_path
-
-  bamfile_path is the path of the alignment file about the reference and the long read set. And, the bam file should be sorted and indexed;
-
-  output_data_folder is a folder which is used to store training data or evaluation data;
-
-  vcf_path is the path of the vcf which is used to label training data;
-```
-
-#### 2. Train a new model
-```bash
-python breaknet.py train_mode training_data_folder evaluation_data_folder trained_weight_path epochs
-
-  First, we use commond 1 to produce training data, which is stored in the training_data_folder.
-  
-  Second, we use commond 1 to produce evaluation data, which is stored in the evaluation_data_folder.
-
-  trained_weight_path is the path of the trained weight file of the model. Not include extension name.
-
-  epochs are max training epochs.
-```
 
 ### Call deletion
 In the folder "trained_weight", we give the trained weight files, which can directly used for calling deletions.
