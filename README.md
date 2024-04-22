@@ -55,12 +55,12 @@ In the folder "trained_weight", we give the trained weight files, which can dire
 
 #### 1. Produce data for call sv
 ```bash
-python breaknet.py data_mode bamfile_path call_folder
+python breaknet.py data_mode bamfile_path data_folder
 
 ```
 
 #### 2. Call deletion
 ```bash
-python breaknet.py call_mode call_folder trained_weight_path bamfilepath
+python breaknet.py call_mode data_folder trained_weight_path bamfilepath
 ```
 
