@@ -23,7 +23,7 @@ conda deactivate
 #### 2. clone BreakNet
 - After creating and activating the BreakNet virtual environment, download BreakNet from github:
 ```bash
-git clone https://github.com/luojunwei/BreakNet.git
+git clone https://github.com/micahvista/BreakNet.git
 cd BreakNet
 ``` 
 #### 3. Install
